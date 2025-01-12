@@ -1,5 +1,5 @@
 const aboutPage = async (req,res) =>{
-    res.render("faq")
+    res.render("about")
 }
 
 module.exports = aboutPage

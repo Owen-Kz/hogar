@@ -39,7 +39,7 @@
                                 <li><a href="#">Gifts</a></li>
                                 <li><a href="#">New products</a></li>
                                 <li><a href="#">Branding Items</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/contact">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,9 +49,10 @@
                         <div class="footer-block">
                             <h3 class="footer-block-title">Our company</h3>
                             <ul>
-                                <li><a href="#">Delivery</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <!-- <li><a href="#">Delivery</a></li> -->
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/contact">Contact us</a></li>
+                                <li><a href="/faq">FAQ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +127,7 @@
                     <!-- Footer Payment Area End Here -->
                     <!-- Begin Copyright Area -->
                     <div class="copyright text-center pt-25">
-                        <span>Hluxegifts.com (c) 2025</a></span>
+                        <span id="copyrightContainer">Hluxegifts.com (c) </span>
                     </div>
                     <!-- Copyright Area End Here -->
                 </div>
@@ -135,3 +136,6 @@
     </div>
     <!-- Footer Static Bottom Area End Here -->
 </div>
+
+<script>
+document.getElementById("copyrightContainer").innerText += ` ${new Date().getFullYear()}`</script>
