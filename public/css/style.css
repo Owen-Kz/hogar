@@ -2360,7 +2360,9 @@ textarea:focus {
 .add-actions-link li.add-cart {
 	float: left;
 	margin: 0;
-	background: #eef0f1;
+	align-items: center;
+	background: #077903;
+	color: #fff;
 	border: 1px solid #e1e1e1;
 	transition: all 0.3s ease-in-out;
 	width: 120px;
@@ -2381,7 +2383,7 @@ textarea:focus {
 	transition: all 300ms ease-in 0s;
 }
 .add-actions-link li.add-cart.active a {
-	color: #242424;
+	color: #e2e2e2;
 }
 .add-actions-link li:hover a, 
 .add-actions-link li.add-cart:hover a {
@@ -5442,10 +5444,11 @@ span.required {
 	width:200px !important;
 }
 
-.social-link .fa{
-
+.headerText{
+	color: #c89d37;
+	font-family: 'PlayFair';
+	font-size:60px;
 }
-
 .logo img, .footer-logo img{
 	object-fit: contain !important;
 	width:100%;

@@ -6,6 +6,12 @@ const loginPage = require("../controllers/login");
 const singleProduct = require("../controllers/singleProduct");
 const faqPage = require("../controllers/faqPage");
 const uploadPage = require("../controllers/uploadPage");
+const uploadProduct = require("../controllers/uploadItem");
+const login = require("../controllers/auth/login");
+const products = require("../controllers/AllProducts");
+const otherProducts = require("../controllers/otherProducts");
+const productCategory = require("../controllers/productsCategory");
+const Register = require("../controllers/auth/register");
 const router = express.Router();
 
 router.use(express.json());
@@ -17,8 +23,18 @@ router.get("/login", loginPage)
 router.get("/faq", faqPage)
 router.get("/product/:productSlug", singleProduct)
 router.get("/upload", uploadPage)
+router.post("/allProducts", products)
 
-router.get("*", homePage)
+router.post("/upload", uploadProduct)
+router.post("/userLogin", login) 
+router.post("/userRegister", Register)
+router.get("/otherProducts", otherProducts)
+router.get("/category/:category", productCategory)
+// router.get("/search")
+ 
+router.get("*", (req,res) =>{
+    res.render("404")
+})
 
 
 module.exports = router

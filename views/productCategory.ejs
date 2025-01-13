@@ -60,7 +60,7 @@
                     <div class="breadcrumb-content">
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li class="active">Products</li>
+                            <li class="active"><%= category %></li>
                         </ul>
                     </div>
                 </div>
@@ -83,29 +83,14 @@
                                 <div class="shop-bar-inner">
                                     <div class="product-view-mode">
                                         <!-- shop-item-filter-list start -->
-                                <h1 class="headerText">Buy. Brand. Gift.</h1>
+                                <h1 class="headerText"><%= category %></h1>
                                         <!-- shop-item-filter-list end -->
                                     </div>
                                     <!-- <div class="toolbar-amount">
                                         <span>Showing 1 to 9 of 15</span>
                                     </div> -->
                                 </div>
-                                <!-- product-select-box start -->
-                                <!-- <div class="product-select-box">
-                                    <div class="product-short">
-                                        <p>Sort By:</p>
-                                        <select class="nice-select">
-                                            <option value="trending">Relevance</option>
-                                            <option value="sales">Name (A - Z)</option>
-                                            <option value="sales">Name (Z - A)</option>
-                                            <option value="rating">Price (Low &gt; High)</option>
-                                            <option value="date">Rating (Lowest)</option>
-                                            <option value="price-asc">Model (A - Z)</option>
-                                            <option value="price-asc">Model (Z - A)</option>
-                                        </select>
-                                    </div>
-                                </div> -->
-                                <!-- product-select-box end -->
+                               
                             </div>
                             <!-- shop-top-bar end -->
                             <!-- shop-products-wrapper start -->
@@ -115,7 +100,39 @@
                                         <div class="product-area shop-product-area">
                                             <%- include("alertMessage") %>
                                             <div class="row" id="productsContainer">
-                                         
+                                         <% for(let i =0; i<products.length; i++){ %>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 mt-40">
+                                                <!-- single-product-wrap start -->
+                                                <div class="single-product-wrap">
+                                                    <div class="product-image">
+                                                        <a href="/product/<%=products[i].slug%>">
+                                                            <img src="<%=products[i].thumbnail%>" alt="<%=products[i].title%>">
+                                                        </a>
+                                                        
+                                                    </div>
+                                                    <div class="product_desc">
+                                                        <div class="product_desc_info">
+                                                            <div class="product-review">
+                                                                <h5 class="manufacturer">
+                                                                    <a href="/category/<%=products[i].category%>"><%=products[i].category%></a>
+                                                                </h5>
+                                                                                                    
+                                                            </div>
+                                                            <h4><a class="product_name limited-text" href="/product/<%=products[i].slug%>"><%=products[i].title%></a></h4>
+                                                            
+                                                        </div>
+                                                        <div class="add-actions">
+                                                            <ul class="add-actions-link">
+                                                                <li class="add-cart active"><a href="https://wa.me/<%= whatsapp %>?text=I'm%20inquiring%20about%20the%20<%=products[i].slug%>" target=_blank><i class="fa fa-whatsapp"></i> <b>Contact us</b> </a></li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- single-product-wrap end -->
+                                            </div>
+
+                                            <% } %>
                                            
                                 
                                          
@@ -186,8 +203,6 @@
         <script src="/js/scrollUp.min.js"></script>
         <!-- Main/Activator js -->
         <script src="/js/main.js"></script>
-        <script type="module" src="/js/query/getAllProducts.js"></script>
-        <!-- <script type="module", src="/js/query/searchQuery.js"></script> -->
     </body>
 
 <!-- shop-3-column31:48-->

@@ -1,14 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-}
+
 
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
+/* label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -19,8 +15,11 @@ input, textarea, select {
     padding: 8px;
     margin: 5px 0;
     box-sizing: border-box;
-}
+} */
 
+.register-button{
+    width: max-content !important;
+}
 #image-preview {
     display: flex;
     flex-wrap: wrap;
