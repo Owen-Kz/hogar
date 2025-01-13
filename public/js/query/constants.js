@@ -1,4 +1,4 @@
-const whatsappNumber = "+2349027315223"
+const whatsappNumber = "+2349090000732"
 
 
 export{ 
