@@ -1,8 +1,9 @@
 const registerForm = document.getElementById("register-form")
 const loaderbody = document.getElementById("loaderbody")
-import { WriteError } from "./alertMessages.js"
+import { WriteError, WriteSucess } from "./alertMessages.js"
 const password1 = document.getElementById("pass1")
 const password2 = document.getElementById("pass2") 
+
 
 
 password1.addEventListener("change", function(){
