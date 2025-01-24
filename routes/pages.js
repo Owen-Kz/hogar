@@ -16,7 +16,10 @@ const router = express.Router();
 
 router.use(express.json());
 
-router.get("/", homePage)
+router.get("/", (req,res) =>{
+    res.render("landing")
+})
+router.get("/home", homePage)
 router.get("/about", aboutPage)
 router.get("/contact", contactPage)
 router.get("/login", loginPage)
@@ -30,6 +33,10 @@ router.post("/userLogin", login)
 router.post("/userRegister", Register)
 router.get("/otherProducts", otherProducts)
 router.get("/category/:category", productCategory)
+
+router.get("/landingPageOld", (req,res) =>{
+    res.render("landingPage")
+})
 // router.get("/search")
  
 router.get("*", (req,res) =>{

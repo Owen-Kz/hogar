@@ -1,0 +1,85 @@
+
+  <style>
+    /* body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    } */
+
+    .carousel {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      animation: scroll 100s linear infinite;
+    }
+
+    .carousel img {
+      width: auto;
+      height: auto;
+      max-height: 80%;
+      object-fit: contain;
+      border-radius: 10px;
+      margin:20px
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.33_PM_2_gpouf4.jpg" alt="Image 1">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_1_hjy8eo.jpg" alt="Image 2">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.33_PM_1_gpmihw.jpg" alt="Image 3">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_2_s1xwbx.jpg" alt="Image 4">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_s3fztc.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.33_PM_tsmueb.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.34_PM_3_vfkihw.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_3_aolbed.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_1_jxqvsk.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_my9vqu.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_2_r88djh.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_4_vgjn69.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.36_PM_ipeici.jpg" alt="Image 5">
+      <!-- <img src="image5.png" alt="Image 5">
+      <img src="image5.png" alt="Image 5"> -->
+
+
+      <!-- Repeat images for seamless scrolling -->
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.33_PM_2_gpouf4.jpg" alt="Image 1">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_1_hjy8eo.jpg" alt="Image 2">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.33_PM_1_gpmihw.jpg" alt="Image 3">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_2_s1xwbx.jpg" alt="Image 4">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748175/WhatsApp_Image_2025-01-24_at_8.40.34_PM_s3fztc.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.33_PM_tsmueb.jpg" alt="Image 5">
+      <img src="ihttps://res.cloudinary.com/dvm0bs013/image/upload/v1737748176/WhatsApp_Image_2025-01-24_at_8.40.34_PM_3_vfkihw.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_3_aolbed.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_1_jxqvsk.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_my9vqu.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_2_r88djh.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.35_PM_4_vgjn69.jpg" alt="Image 5">
+      <img src="https://res.cloudinary.com/dvm0bs013/image/upload/v1737748177/WhatsApp_Image_2025-01-24_at_8.40.36_PM_ipeici.jpg" alt="Image 5">
+      <!-- <img src="image5.png" alt="Image 5">
+      <img src="image5.png" alt="Image 5"> -->
+
+    </div>
+  </div>

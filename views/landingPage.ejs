@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page with Sliding Images</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      padding: 0 5%;
+      background-color: #FFD700;
+      color: #000;
+    }
+
+    .content {
+      max-width: 50%;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      margin: 0 0 20px;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      background-color: #000;
+      color: #FFD700;
+      border-radius: 5px;
+    }
+
+    .image-slider {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-slider img {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      transition: top 1s ease-in-out;
+    }
+
+    .image-slider img.active {
+      top: 0;
+    }
+
+    .image-slider img.inactive {
+      top: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Custom-Crafted Corporate Gifts</h1>
+      <p>
+        Crafting and branding promotional products of any complexity.
+        Delivery to the door of your office or warehouse on a turnkey basis, worldwide.
+        Handling the entire document workflow for you.
+      </p>
+      <div class="buttons">
+        <button>Book a Free Consultation</button>
+        <button>Get Presentation</button>
+      </div>
+    </div>
+    <div class="image-slider" id="imageSlider">
+      <img src="image1.png" alt="Image 1" class="active">
+      <img src="image2.png" alt="Image 2">
+      <img src="image3.png" alt="Image 3">
+    </div>
+  </div>
+  <script>
+    const images = document.querySelectorAll("#imageSlider img");
+    let currentIndex = 0;
+
+    function slideImages() {
+      images[currentIndex].classList.remove("active");
+      images[currentIndex].classList.add("inactive");
+
+      currentIndex = (currentIndex + 1) % images.length;
+
+      images[currentIndex].classList.remove("inactive");
+      images[currentIndex].classList.add("active");
+    }
+
+    // Start the sliding effect
+    setInterval(slideImages, 4000); // Slides every 4 seconds
+  </script>
+
+  
+</body>
+</html>
