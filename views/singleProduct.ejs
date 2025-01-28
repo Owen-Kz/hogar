@@ -7,7 +7,28 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><%= product.title %> | Hogar Luxe</title>
-  <meta name="description" content="">
+  <meta name="description" content="<%= product.description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+  <!-- Material Design Iconic Font-V2.2.0 -->
+
+
+  <meta property="og:url" content="https://hluxegifts.com/product/<%= product.slug %>" />
+  <meta property="og:title" content="<%= product.title %>" />
+  <meta property="og:description" content="<%= product.description %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="<%=files[0].file_url %>" />
+  <link rel="canonical" href="/">
+  <!--/metatextblock-->
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="/">
+  <link rel="dns-prefetch" href="/">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="/image/favicon.png media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" type="image/png" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon.png"> <!-- Assets -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
