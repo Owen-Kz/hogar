@@ -8,8 +8,8 @@
 	--hue: 223;
 	--bg: hsl(var(--hue),10%,90%);
 	--fg: hsl(var(--hue),10%,10%);
-	--primary: #30260f;
-	--trans-dur: 0.3s;
+	--primary: #30260f !important;
+	--trans-dur: 0.3s !important;
 	/* font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320)); */
 }
 .hide {
@@ -19,7 +19,7 @@
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 .loaderbody {
-	background-color: #faec9b;
+	background-color: #faec9b !important;
 	color: var(--fg);
 	font: 1em/1.5 "DM Sans", sans-serif;
 	height: 100vh;
@@ -86,8 +86,8 @@
 	animation-name: cartWheelStroke
 }
 .cart__track {
-	stroke: #c89d37;
-	transition: stroke var(--trans-dur);
+	stroke: #c89d37 !important;
+	transition: stroke var(--trans-dur) !important;
 }
 
 /* Dark theme */
@@ -97,7 +97,7 @@
 		--fg: hsl(var(--hue),10%,90%);
 	}
 	.cart__track {
-		stroke: #c89d37;
+		stroke: #c89d37 !important;
 	}
 }
 
