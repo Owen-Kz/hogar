@@ -1,3 +1,5 @@
+const { whatsappNumber } = require("./constants")
+
 const category = document.getElementById("category").value
 const otherProdctsContainer = document.getElementById("otherProductsContainer")
 
@@ -33,7 +35,8 @@ fetch(`/otherProducts?c=${category}`)
                                                 </div>
                                                 <div class="add-actions">
                                                     <ul class="add-actions-link">
-                                                        <li class="add-cart active"><a href="#">Contact Us</a></li>
+                                                    
+                                                        <li class="add-cart active"><a href="https://wa.me/${whatsappNumber}?text=I'm%20inquiring%20about%20the%20${otherProducts[i].slug}" target=_blank>Contact Us</a></li>
 
                                                     </ul>
                                                 </div>
