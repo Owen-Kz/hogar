@@ -1,6 +1,6 @@
 const loginForm = document.getElementById("login-form")
 const loaderbody = document.getElementById("loaderbody")
-import { WriteError, WriteSucess } from "./alertMessages.js"
+import { WriteError, WriteSucess } from "./alertMessages.mjs"
 
 loginForm.addEventListener("submit", function(e){
     e.preventDefault()

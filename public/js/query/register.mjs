@@ -1,6 +1,6 @@
 const registerForm = document.getElementById("register-form")
 const loaderbody = document.getElementById("loaderbody")
-import { WriteError, WriteSucess } from "./alertMessages.js"
+import { WriteError, WriteSucess } from "./alertMessages.mjs"
 const password1 = document.getElementById("pass1")
 const password2 = document.getElementById("pass2") 
 
