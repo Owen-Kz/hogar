@@ -22,10 +22,11 @@ app.use(express.json({ limit: '100mb' })); // For JSON bodies
 app.use(express.urlencoded({ limit: '100mb', extended: true })); // For URL-encoded bodies
  
 
-
+// Set the view engine
 app.set("view engine", "ejs");
 
-app.set("views", ["views", "/views", "./views"]);
+// Ensure Express knows where to find the views
+app.set("views", path.join(__dirname, "views")); 
 
 app.use("/css", express.static(__dirname + "/public/css", { type: 'text/css' }))
 app.use("/js", express.static(__dirname + "/public/js", { type: 'text/javascript' }))
@@ -38,7 +39,7 @@ app.use("/fonts", express.static(__dirname + "/public/fonts", { type: 'text/fold
 
 
 
-app.use("/", require(__dirname +"/routes/pages"));
+app.use("/", require(__dirname +"./routes/pages"));
 
 server.listen(PORT); 
 console.log("Server is running on", PORT)
