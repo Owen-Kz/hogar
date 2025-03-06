@@ -204,7 +204,7 @@ function NewPage(page) {
                                                             </div>
                                                             <div class="add-actions">
                                                                 <ul class="add-actions-link">
-                                                                    <li class="add-cart active"><a href="https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://hluxegift.com/product/${ProductsList[i].slug}%20I'm%20inquiring%20about%20the%20*${ProductsList[i].title}*%20My%20Name%20is%20..." target=_blank><i class="fa fa-whatsapp"></i> <b>Contact us</b> </a></li>
+                                                                    <li class="add-cart active"><a href="https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/${ProductsList[i].slug}%20I'm%20inquiring%20about%20the%20*${ProductsList[i].title}*%20My%20Name%20is%20..." target=_blank><i class="fa fa-whatsapp"></i> <b>Contact us</b> </a></li>
                                                                     
                                                                 </ul>
                                                             </div>
