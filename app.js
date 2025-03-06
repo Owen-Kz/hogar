@@ -4,6 +4,7 @@ const app =  express();
 const cookie = require("cookie-parser");
 const PORT = process.env.PORT || 31000;
 const server = require("http").Server(app)
+const path = require("path")
 // const session = require("express-session");
 const session = require('express-session');
 const bodyParser = require("body-parser");
