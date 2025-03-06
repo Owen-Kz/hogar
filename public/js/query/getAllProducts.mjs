@@ -1,4 +1,4 @@
-import { WriteError } from "./alertMessages.js";
+import { WriteError } from "./alertMessages.mjs";
 import { whatsappNumber } from "./constants.js";
 
 const ProductsContainer = document.getElementById("productsContainer")
