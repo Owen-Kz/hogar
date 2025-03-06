@@ -7,7 +7,7 @@ const ProductsBottomContainer = document.getElementById("ProductsBottomContainer
 const ProductsTopContainer = document.getElementById("ProductsTopContainer")
 const maxLength = 50;
 
-
+ 
 
 function booksNavigation(totalPagesProducts, currentPage) {
     const booksNavContainer = document.getElementById("pagination");

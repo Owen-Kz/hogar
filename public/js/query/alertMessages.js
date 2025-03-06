@@ -30,6 +30,7 @@ alertContainer.innerHTML = `<div class="col-sm-12">
         </div>
       </div>`
 }
+ 
 
 
 export {
