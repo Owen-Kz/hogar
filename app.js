@@ -40,7 +40,7 @@ app.use("/fonts", express.static(__dirname + "/public/fonts", { type: 'text/fold
 
 
 
-app.use("/", require(__dirname +"./routes/pages"));
+app.use("/", require(__dirname +"/routes/pages"));
 
 server.listen(PORT); 
 console.log("Server is running on", PORT)
