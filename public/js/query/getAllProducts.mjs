@@ -1,5 +1,5 @@
 import { WriteError } from "./alertMessages.mjs";
-import { whatsappNumber } from "./constants.js";
+import { whatsappNumber } from "./constants.mjs";
 
 const ProductsContainer = document.getElementById("productsContainer")
 const paginationContainer = document.getElementById("pagination");
