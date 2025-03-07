@@ -30,6 +30,7 @@ const products = async (req, res) => {
         });
 
         const responseData = await response.json();
+    
 
         if (responseData.success) {
             const Allproducts = responseData.products;
@@ -49,6 +50,7 @@ const products = async (req, res) => {
                 totalPages: Math.ceil(totalPagesCount / 1),
             });
         } else {
+            console.log(responseData)
             return res.json({ error: responseData.error });
         }
     } catch (error) {
