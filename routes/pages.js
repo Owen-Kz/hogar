@@ -12,6 +12,7 @@ const products = require("../controllers/AllProducts");
 const otherProducts = require("../controllers/otherProducts");
 const productCategory = require("../controllers/productsCategory");
 const Register = require("../controllers/auth/register");
+const siteMap = require("../controllers/services/sitemap");
 const router = express.Router();
 
 router.use(express.json());
@@ -33,6 +34,9 @@ router.post("/userLogin", login)
 router.post("/userRegister", Register)
 router.get("/otherProducts", otherProducts)
 router.get("/category/:category", productCategory)
+
+router.get('/sitemap.xml', siteMap)
+ 
 
 router.get("/landingPageOld", (req,res) =>{
     res.render("landingPage")
