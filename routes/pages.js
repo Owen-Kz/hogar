@@ -31,7 +31,7 @@ router.post("/allProducts", products)
 
 router.post("/upload", uploadProduct)
 router.post("/userLogin", login) 
-router.post("/userRegister", Register)
+// router.post("/userRegister", Register)
 router.get("/otherProducts", otherProducts)
 router.get("/category/:category", productCategory)
 
