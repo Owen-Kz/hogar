@@ -8,13 +8,14 @@ async function OtherProdcuts(category){
 }
 const singleProduct = async (req,res) =>{
     const slug = req.params.productSlug
+    const id = req.params.productID
     try {
         const response = await fetch(`${process.env.ENDPOINT}/y/singleProduct`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({slug:slug})
+            body: JSON.stringify({slug:slug, id:id})
         });
         
         const responseData = await response.json();

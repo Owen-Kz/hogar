@@ -25,7 +25,7 @@ router.get("/about", aboutPage)
 router.get("/contact", contactPage)
 router.get("/login", loginPage)
 router.get("/faq", faqPage)
-router.get("/product/:productSlug", singleProduct)
+router.get("/product/:productSlug/:productID", singleProduct)
 router.get("/upload", uploadPage)
 router.post("/allProducts", products)
 

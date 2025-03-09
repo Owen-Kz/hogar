@@ -158,7 +158,7 @@
                                                 <!-- single-product-wrap start -->
                                                 <div class="single-product-wrap">
                                                     <div class="product-image">
-                                                        <a href="/product/<%=products[i].slug%>">
+                                                        <a href="/product/<%=products[i].slug%>/<%=products[i].id%>">
                                                             <img src="<%=products[i].thumbnail%>" alt="<%=products[i].title%>">
                                                         </a>
                                                         
@@ -171,12 +171,12 @@
                                                                 </h5>
                                                                                                     
                                                             </div>
-                                                            <h4><a class="product_name limited-text" href="/product/<%=products[i].slug%>"><%=products[i].title%></a></h4>
+                                                            <h4><a class="product_name limited-text" href="/product/<%=products[i].slug%>/<%=products[i].id%>"><%=products[i].title%></a></h4>
                                                             
                                                         </div>
                                                         <div class="add-actions">
                                                             <ul class="add-actions-link">
-                                                                <li class="add-cart active"><a href="https://wa.me/+2349090000732?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/<%=products[i].slug%>%20I'm%20inquiring%20about%20the%20*<%=products[i].title%>*%20My%20Name%20is%20..." target=_blank><i class="fa fa-whatsapp"></i> <b>Contact us</b> </a></li>
+                                                                <li class="add-cart active"><a href="https://wa.me/+2349090000732?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/<%=products[i].slug%>/<%=products[i].id%>%20I'm%20inquiring%20about%20the%20*<%=products[i].title%>*%20My%20Name%20is%20..." target=_blank><i class="fa fa-whatsapp"></i> <b>Contact us</b> </a></li>
                                                                 
                                                             </ul>
                                                         </div>

@@ -28,7 +28,7 @@ fetch(`/otherProducts?c=${category}`)
                                                         </h5>
                                                     
                                                     </div>
-                                                    <h4><a class="product_name" href="/product/${otherProducts[i].slug}">${otherProducts[i].title}</a></h4>
+                                                    <h4><a class="product_name" href="/product/${otherProducts[i].slug}/${otherProducts[i].id}">${otherProducts[i].title}</a></h4>
                                                     <div class="price-box">
                                                         <span class="new-price">N ${otherProducts[i].price.toFixed(2).toLocaleString()}</span>
                                                     </div>
@@ -36,7 +36,7 @@ fetch(`/otherProducts?c=${category}`)
                                                 <div class="add-actions">
                                                     <ul class="add-actions-link">
                                                     
-                                                        <li class="add-cart active"><a href="<a href="https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/${otherProducts[i].slug}%20I'm%20inquiring%20about%20the%20*${otherProducts[i].title}*%20My%20Name%20is%20..." target=_blank>Contact Us</a></li>
+                                                        <li class="add-cart active"><a href="<a href="https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/${otherProducts[i].slug}/${otherProducts[i].id}%20I'm%20inquiring%20about%20the%20*${otherProducts[i].title}*%20My%20Name%20is%20..." target=_blank>Contact Us</a></li>
 
                                                     </ul>
                                                 </div>

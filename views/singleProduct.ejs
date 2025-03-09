@@ -25,7 +25,7 @@
 
   <meta property="og:title" content="<%= product.title %> | Hogar Luxe Gifts">
 <meta property="og:type" content="website"> <!-- Can be 'article', 'video', 'profile', etc. -->
-<meta property="og:url" content="https://www.hluxegift.com/product/<%= product.slug %>">
+<meta property="og:url" content="https://www.hluxegift.com/product/<%= product.slug %>/<%=product[i].id%>">
 <meta property="og:image" content="<%=files[0].file_url %>">
 <meta property="og:image:alt" content="<%= product.title %> | Hluxegifts">
 <meta property="og:site_name" content="hluxegift">
@@ -40,7 +40,7 @@
 <meta name="twitter:image:alt" content="<%= product.title %> www.hluxegift.com">
 <meta name="twitter:site" content="@hluxegifts">
 <meta name="twitter:creator" content="@hluxegifts">
-<link rel="canonical" href="https://www.hluxegift.com/product/<%= product.slug %>">
+<link rel="canonical" href="https://www.hluxegift.com/product/<%= product.slug %>/<%= product.id %>">
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -245,7 +245,7 @@
                   <!-- single-product-wrap start -->
                   <div class="single-product-wrap">
                     <div class="product-image">
-                      <a href="/product/<%= more[i].slug %>">
+                      <a href="/product/<%= more[i].slug %>/<%= more[i].id %>">
                         <img src="<%= more[i].thumbnail %>" alt="<%= more[i].title %>">
                       </a>
                       <span class="sticker">New</span>
@@ -258,14 +258,14 @@
                           </h5>
 
                         </div>
-                        <h4><a class="product_name" href="/product/<%= more[i].slug%>"><%= more[i].title %></a></h4>
+                        <h4><a class="product_name" href="/product/<%= more[i].slug%>/<%= more[i].id%>""><%= more[i].title %></a></h4>
                         <div class="price-box">
                           <span class="new-price">N <%= more[i].price.toFixed(2).toLocaleString()%></span>
                         </div>
                       </div>
                       <div class="add-actions">
                         <ul class="add-actions-link">
-                          <li class="add-cart active"><a href="<%= whatsapp %><%= more[i].slug %>"><i class="fa fa-whatsapp"></i> <b>Contact us</b></a></li>
+                          <li class="add-cart active"><a href="https://wa.me/+2349090000732?text=Hi,%20I'm%20contacting%20you%20by%20clicking%20on%20the%20whatsapp%20button%20on%20your%20website. %20https://www.hluxegift.com/product/<%= more[i].slug %>/<%= more[i].id %>%20I'm%20inquiring%20about%20the%20*<%=more[i].title%>*%20My%20Name%20is%20..."><i class="fa fa-whatsapp"></i> <b>Contact us</b></a></li>
 
                         </ul>
                       </div>
